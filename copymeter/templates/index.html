@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>העתקומטר</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="maintext">
+                <h2 class="welcome">ברוכים הבאים <span>להעתקומטר</span></h2>
+                <p class="small">להעתיק <span>בסטייל</span></p>
+            </div>
+            <div class="main-action">
+                <form action="/action" method="POST">
+                    <div class="both">
+                        <div class="grid1">
+                            <p class="info">הטקסט שלך</p>
+                            <textarea name="content" id="ta" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit">התחל</button>
+                </form>
+                <div class="grid2">
+                    <p class="info">תוצאה</p>
+                    <textarea name="output" id="ta" cols="30" rows="10">{{output}}</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

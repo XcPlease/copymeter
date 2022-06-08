@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(15, 15, 15);
+    
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'baba'; /*a name to be used later*/
+    src: url('./fonts/baba-bold-fm.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'haim'; /*a name to be used later*/
+    src: url('./fonts/haim-classic-black-fm.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'oscar'; /*a name to be used later*/
+    src: url('./fonts/oscar-light-fm.ttf'); /*URL to font*/
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    height: 80vh;
+}
+
+.maintext {
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+h2 {
+    font-family: 'haim';
+    margin-bottom: 14px;
+}
+
+p {
+    font-family: 'oscar';
+    margin-top: 0;
+}
+
+span {
+    color: orange;
+}
+
+.main-action {
+display: flex;
+text-align: center;
+margin-top: 10vh;
+}
+
+
+.both {
+    text-align-last: center;
+    display: flex;
+}
+
+#ta {
+    text-align: right;
+    margin: 30;
+    color: white;
+    background: rgba(0, 0, 0, 0.178);
+    font-size: 30px;
+}
+
+.info {
+    color: rgba(255, 255, 255, 0.521);
+}
+
+button {
+    font-family: 'oscar';
+    border: 0;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 8;
+    color: white;
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+}
